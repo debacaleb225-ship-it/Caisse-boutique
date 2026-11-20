@@ -1,0 +1,13 @@
+def total_price(price,quantity):
+    return (price * quantity)
+name = input("Quel est votre nom : ").strip().title()
+first,last = name.split(" ")
+print(f"Bonjour, {first} !")
+item = input ("Article : ").strip().title()
+price = float(input ("Quel est le prix unitaire du produit : "))
+quantity = int(input("Quel est la quantité : "))
+print(f"Article : {item}")
+print(f"Prix : {price} FCFA * {quantity}")
+total = total_price (price,quantity)
+print(f"Total : {total} FCFA")
+print(f"Merci,{first} {last} à bientôt !")
